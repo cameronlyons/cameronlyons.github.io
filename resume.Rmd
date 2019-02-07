@@ -3,3 +3,33 @@ title: "Cameron Lyons' Resume"
 ---
 
 <hr>
+
+##Key Skills
+  * Genuine Passion for Baseball and Analytics
+  * Coding in R
+  * Over a Decade of Baseball Experience
+  * Thorough Attention to Detail
+  * Team Player
+
+##Experience
+**Fall 2018**<br>
+Data Collection | Trackman<br>
+Data Analysis | R Coding<br>
+**Winter 2016**<br>
+Forbush High School Basketball | Statistician
+
+##Education
+**June 2017**<br>
+Forbush High School | High School Diploma<br>
+**Present**<br>
+Appalachian State University | Recreation Management Major
+
+#Employment
+**William G. White Family YMCA**<br>
+Lifegaurd | 2 Years<br>
+**Parkway Ford**<br>
+Mechanic | Summer 2018<br>
+**Appalachian State University**<br>
+SRC Scorer/Timer | Spring 2019
+
+<hr>

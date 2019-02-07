@@ -3,3 +3,67 @@ title: "Past Baseball Project"
 ---
 
 <hr>
+
+```{r,label = "SETUP", include=FALSE, results = 'hide'}
+knitr::opts_chunk$set(echo = FALSE, fig.align = "center", fig.width = 4, fig.height = 4, comment = NA, warning = FALSE, message = FALSE)
+library(readr)
+library(dplyr)
+library(ggplot2)
+Master <- read_csv("~/Appalachian State Baseball/Master.csv")
+```
+
+```{r}
+Hitter <- Master %>%
+  filter(Batter == "McDaniel, Joel")
+NinetyPlus <- Hitter %>%
+  filter(ExitSpeed >= 90)
+x <- c(-.95,.95,.95,-.95,-.95)
+z <- c(1.6,1.6,3.5,3.5,1.6)
+sz <- data_frame(x, z)
+ggplot() +
+  geom_path(data = sz, aes(x = x, y = z)) +
+  coord_equal() +
+  xlab("Plate Width") +
+  ylab("Plate Height") +
+  ggtitle("90+ Exit Velocities") +
+  geom_point(data = NinetyPlus,aes(x = PlateLocSide, y = PlateLocHeight, size = ExitSpeed, color = TaggedPitchType)) +
+  scale_size(range = c(0.1, 2)) + coord_cartesian(xlim = c(-2, 2), ylim = c(0, 5)) +
+  scale_color_discrete(limits=c("Fastball" ,"ChangeUp", "Splitter", "Curveball", "Slider"))
+```
+
+```{r}
+Hitter <- Master %>%
+  filter(Batter == "McDaniel, Joel")
+FastballTakes <- Hitter %>%
+  filter(TaggedPitchType == "Fastball" & PitchCall == "StrikeCalled")
+x <- c(-.95,.95,.95,-.95,-.95)
+z <- c(1.6,1.6,3.5,3.5,1.6)
+sz <- data_frame(x, z)
+ggplot() +
+  geom_path(data = sz, aes(x = x, y = z)) +
+  coord_equal() +
+  xlab("Plate Width") +
+  ylab("Plate Height") +
+  ggtitle("Fastball Takes") +
+  geom_point(data = FastballTakes,aes(x = PlateLocSide, y = PlateLocHeight, color = TaggedPitchType)) +
+  coord_cartesian(xlim = c(-2, 2), ylim = c(0, 5))
+```
+
+```{r}
+Hitter <- Master %>%
+  filter(Batter == "McDaniel, Joel")
+Whiffs <- Hitter %>%
+  filter(PitchCall == "StrikeSwinging")
+x <- c(-.95,.95,.95,-.95,-.95)
+z <- c(1.6,1.6,3.5,3.5,1.6)
+sz <- data_frame(x, z)
+ggplot() +
+  geom_path(data = sz, aes(x = x, y = z)) +
+  coord_equal() +
+  xlab("Plate Width") +
+  ylab("Plate Height") +
+  ggtitle("Swings & Misses") +
+  geom_point(data = Whiffs,aes(x = PlateLocSide, y = PlateLocHeight, color = TaggedPitchType)) + 
+  coord_cartesian(xlim = c(-2, 2), ylim = c(0, 5)) +
+  scale_color_discrete(limits=c("Fastball" ,"ChangeUp", "Splitter", "Curveball", "Slider"))
+```
