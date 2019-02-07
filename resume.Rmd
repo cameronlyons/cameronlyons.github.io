@@ -1,5 +1,5 @@
 ---
-title: "John Doe's Resume"
+title: "Cameron Lyons' Resume"
 ---
 
-Resume content.
+<hr>

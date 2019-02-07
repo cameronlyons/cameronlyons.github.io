@@ -2,14 +2,17 @@ name: "Cameron Lyons"
 output_dir: "."
 
 navbar:
-  title: "Cameron's Website"
+  title: "Cameron Lyons"
   left:
     - text: "Resume"
       href: resume.html
-    - text: "Pagetitle"
-      href: pagename.html
+    - text: "Project Example"
+      href: project.html
 
 output:
   html_document:
-    theme: default
-    highlight: default
+    theme: cosmo
+    highlight: textmate
+    include:
+      after_body: footer.html
+    css: webpage.css

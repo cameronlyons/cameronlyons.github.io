@@ -1,5 +1,17 @@
 ---
-title: "My Website"
+title: "About Me"
 ---
 
-Hello, Website!
+<hr>
+
+<p style = "text-align:justify">
+I am currently working towards my bachelor's degree in Recreation Management with a minor in Statistics. Working with the Appalachian State Baseball Team since the Fall of 2018, I have gained tremendous expertise in general coding with R.<br>
+
+I am thankful for the many opportunities that I have been given including being around such a supporting family. My father (pictured left) is nothing but helpful for my journey to become a proffesional baseball data analyst. My mother and close cousin (pictured right) have also fell accustomed to the cold conditions of Boone.<br>
+</p>
+
+<center>
+<p><img src="dad.png" style = "height:400px"><img src="mom.png" style = "height:400px"></p>
+</center>
+
+<hr>
