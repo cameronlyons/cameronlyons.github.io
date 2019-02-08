@@ -1,5 +1,5 @@
 ---
-title: "Cameron Lyons' Resume"
+title: "Resume"
 ---
 
 <hr>
