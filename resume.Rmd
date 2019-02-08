@@ -24,7 +24,7 @@ Forbush High School | High School Diploma<br>
 **Present**<br>
 Appalachian State University | Recreation Management Major
 
-#Employment
+##Employment
 **William G. White Family YMCA**<br>
 Lifegaurd | 2 Years<br>
 **Parkway Ford**<br>
