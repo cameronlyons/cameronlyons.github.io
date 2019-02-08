@@ -65,5 +65,5 @@ ggplot() +
   ggtitle("Swings & Misses") +
   geom_point(data = Whiffs,aes(x = PlateLocSide, y = PlateLocHeight, color = TaggedPitchType)) + 
   coord_cartesian(xlim = c(-2, 2), ylim = c(0, 5)) +
-  scale_color_discrete(limits=c("Fastball" ,"ChangeUp", "Splitter", "Curveball", "Slider"))
+  scale_color_discrete(limits = c("Fastball" ,"ChangeUp", "Splitter", "Curveball", "Slider"))
 ```
