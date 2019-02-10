@@ -2,7 +2,7 @@ name: "Cameron Lyons"
 output_dir: "."
 
 navbar:
-  title: "Cameron Lons"
+  title: "Cameron Lyons"
   left:
     - text: "Resume"
       href: resume.html
