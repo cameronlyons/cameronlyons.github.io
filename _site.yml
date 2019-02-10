@@ -1,8 +1,8 @@
-name: "Cameron Lyons"
+name: "Appalachian State Baseball"
 output_dir: "."
 
 navbar:
-  title: "Cameron Lyons"
+  title: "Appalachian State Baseball"
   left:
     - text: "Resume"
       href: resume.html
