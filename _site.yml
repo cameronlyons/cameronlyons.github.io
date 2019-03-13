@@ -10,9 +10,6 @@ navbar:
       href: project.html
   right:
     - text: ""
-      icon: fa-github
-      href: https://github.com/cameronlyons/cameronlyons.github.io/
-    - text: ""
       icon: fa-twitter
       href: https://twitter.com/CameronL3310
 
